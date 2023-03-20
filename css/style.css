@@ -1,0 +1,281 @@
+/*atributos en css y familias tipograficas*/
+
+/*Selectores de atributo*/
+input[type="checkbox"] {
+  margin: 8px;
+}
+
+[type="radio"] {
+  margin: 5px;
+}
+
+/*color al fondo de un div*/
+.contenedor-listas {
+  background-color: blanchedalmond;
+}
+
+
+/*imagenes redondas con padding y margen*/
+/*selectores de class*/ 
+/*tamaño de imagen*/
+/*bordes alrededro de elementos*/
+/*elementos style*/
+.bordes-redondeados {
+  padding: 15px;
+  background-color: yellow;
+  border-radius: 150px;
+  border-width: 5px;
+  border-style: groove;
+  border-color: aqua;
+}
+
+.titanes-eren {
+  width: 300px;
+  border-width: 10px;
+  border-color: thistle;
+  border-style: solid;
+}
+
+/*atributo id*/
+#tipos-titanes {
+  border-radius: 50%;
+  border-width: 5px;
+  border-style: double;
+  border-color: aqua;
+}
+
+#titulo-app-anime {
+  font-family: 'Ephesis', cursive;
+  font-size: 50px;
+  color: red;
+}
+
+/*tamaño y colores de fuente*/
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+}
+
+a {
+  color: darkgreen;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  text-decoration: overline;
+}
+
+ol,
+ul {
+  color: cadetblue;
+  font-family: 'Dancing Script', cursiva;
+  font-size: 15px;
+}
+
+p {
+  color: darkslateblue;
+  font-size: 20px;
+}
+
+/*unidades absolutas y relativas*/
+#contenedor-principal {
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  background-color: yellow;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.rectangulo {
+  padding: 5px;
+  margin: 5px;
+}
+
+.px {
+  background-color: crimson;
+  width: 200px;
+}
+
+.vw {
+  background-color: darkmagenta;
+  width: 20vw;
+}
+
+.em {
+  background-color: green;
+  width: 15em;
+}
+
+
+/*variables en css*/
+/*valores de respaldo*/
+.pinguino {
+    --pinguino-barriga: white;
+    --pinguino-pico: yellow;
+    --pinguino-piel: black;
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+    width: 300px;
+    height: 300px;
+  }
+  
+.pinguino-superior {
+  top: 10%;
+  left: 25%;
+  background: var(--pinguino-piel, black);
+  width: 50%;
+  height: 45%;
+  border-radius: 70% 70% 60% 60%;
+}
+
+.pinguino-inferior {
+  top: 40%;
+  left: 23.5%;
+  background: var(--pinguino-piel, black);
+  width: 53%;
+  height: 45%;
+  border-radius: 70% 70% 100% 100%;
+}
+
+.mano-derecha {
+  top: 0%;
+  left: -5%;
+  background: var(--pinguino-piel, black);
+  width: 30%;
+  height: 60%;
+  border-radius: 30% 30% 120% 30%;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.mano-izquierda {
+  top: 0%;
+  left: 75%;
+  background: var(--pinguino-piel, black);
+  width: 30%;
+  height: 60%;
+  border-radius: 30% 30% 30% 120%;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+.mejilla-derecha {
+  top: 15%;
+  left: 35%;
+  background: var(--pinguino-barriga, white);
+  width: 60%;
+  height: 70%;
+  border-radius: 70% 70% 60% 60%;
+}
+
+.mejilla-izquierda {
+  top: 15%;
+  left: 5%;
+  background: var(--pinguino-barriga, white);
+  width: 60%;
+  height: 70%;
+  border-radius: 70% 70% 60% 60%;
+}
+
+.barriga {
+  top: 60%;
+  left: 2.5%;
+  background: var(--pinguino-barriga, white);
+  width: 95%;
+  height: 100%;
+  border-radius: 120% 120% 100% 100%;
+}
+
+.pie-derecho {
+  top: 85%;
+  left: 60%;
+  background: var(--pinguino-pico, orange);
+  width: 15%;
+  height: 30%;
+  border-radius: 50% 50% 50% 50%;
+  transform: rotate(-80deg);
+  z-index: -2222;
+}
+
+.pie-izquierdo {
+  top: 85%;
+  left: 25%;
+  background: var(--pinguino-pico, orange);
+  width: 15%;
+  height: 30%;
+  border-radius: 50% 50% 50% 50%;
+  transform: rotate(80deg);
+  z-index: -2222;
+}
+
+.ojo-derecho {
+  top: 45%;
+  left: 60%;
+  background: black;
+  width: 15%;
+  height: 17%;
+  border-radius: 50%;
+}
+
+.ojo-izquierdo {
+  top: 45%;
+  left: 25%;
+  background: black;
+  width: 15%;
+  height: 17%;
+  border-radius: 50%;
+}
+
+.reflejo-ojos {
+  top: 25%;
+  left: 15%;
+  background: white;
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+}
+
+.color-mejilla-derecha {
+  top: 65%;
+  left: 15%;
+  background: pink;
+  width: 15%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+.color-mejilla-izquierda {
+  top: 65%;
+  left: 70%;
+  background: pink;
+  width: 15%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+.pico-superior {
+  top: 60%;
+  left: 40%;
+  background: var(--pinguino-pico, orange);
+  width: 20%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+.pico-inferior {
+  top: 65%;
+  left: 42%;
+  background: var(--pinguino-pico, orange);
+  width: 16%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+/*aplicar estilos a body*/
+/*codigo hexadecimales para colores*/
+body {
+  background:#c6faf1;
+}
+
+.pinguino * {
+  position: absolute;
+}
